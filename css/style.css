@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Varela Round";
+  src: url("VarelaRound-Regular.woff2") format("woff2"), url("VarelaRound-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("OpenSans-Regular.woff2") format("woff2"), url("OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/*
+$Varela-Round
+$Open-Sans
+*/
+body {
+  font-family: "Varela Round";
+}/*# sourceMappingURL=style.css.map */
