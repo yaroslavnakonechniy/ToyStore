@@ -58,14 +58,14 @@ a {
 
 @font-face {
   font-family: "Varela Round";
-  src: url("VarelaRound-Regular.woff2") format("woff2"), url("VarelaRound-Regular.woff") format("woff");
+  src: url("../fonts/VarelaRound-Regular.woff2") format("woff2"), url("../fonts/VarelaRound-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Open Sans";
-  src: url("OpenSans-Regular.woff2") format("woff2"), url("OpenSans-Regular.woff") format("woff");
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -193,9 +193,10 @@ body {
 .main__webflow-card {
   width: 570px;
   height: 308px;
-  background: #FFFFFF;
-  border: none;
   border-radius: 20px;
+  border: none;
+  background: #FFFFFF;
+  color: 0;
   text-align: center;
 }
 .main__webflow-sabtitle {
@@ -214,8 +215,8 @@ body {
 .main__webflow-button {
   width: 153px;
   height: 48px;
-  border: none;
   border-radius: 50px;
+  border: none;
   background: #A5C926;
   color: #FFFFFF;
   font-size: 12px;
@@ -234,8 +235,9 @@ body {
 .main__offer-sttufed-animals, .main__offer-wooden-toys {
   width: 570px;
   height: 188px;
-  border: none;
   border-radius: 20px;
+  border: none;
+  background: 0;
   color: #FFFFFF;
   margin: 0 15px;
 }
@@ -291,12 +293,12 @@ body {
 .main__offer-button-wooden-toys, .main__offer-button-sttufed-animals {
   width: 112px;
   height: 40px;
+  border-radius: 20px;
+  border: none;
   background: #FFFFFF;
   color: #111111;
   font-size: 13px;
   line-height: 24px;
-  border: none;
-  border-radius: 20px;
   margin: 0 15px;
 }
 .main__sttufed-container, .main__wooden-container {
@@ -358,9 +360,11 @@ body {
   display: grid;
   grid-template: 240px 32px 24px/1fr;
   box-shadow: 0 1px 0 #DDDDDD;
-  background: #FFFFFF;
-  border: 2px solid #F8F8F8;
   border-radius: 20px;
+  border: none;
+  background: #FFFFFF;
+  color: 0;
+  border: 2px solid #F8F8F8;
   justify-items: center;
 }
 .main__sttufed-card-image, .main__wooden-card-image {
@@ -372,8 +376,8 @@ body {
 }
 .main__sttufed-card-button, .main__wooden-card-button {
   width: 92px;
-  border: none;
   border-radius: 50px;
+  border: none;
   background: #A5C926;
   color: #FFFFFF;
 }
@@ -489,10 +493,10 @@ body {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 28px;
-  color: #FFFFFF;
-  border: none;
   border-radius: 50px;
+  border: none;
   background: #A5C926;
+  color: #FFFFFF;
 }
 .main__subscribe-container {
   background: #F8F8F8;
@@ -544,8 +548,8 @@ body {
 .main__subscribe-buttons-buton {
   width: 121px;
   height: 47px;
-  border: none;
   border-radius: 50px;
+  border: none;
   background: #A5C926;
   color: #FFFFFF;
 }
@@ -557,6 +561,7 @@ body {
   grid-template: auto auto auto auto/1fr;
   padding: 119px 0;
   text-align: center;
+  place-items: center;
 }
 .main__elastic-copy {
   font-size: 13px;
@@ -579,14 +584,13 @@ body {
 .main__elastic-button {
   width: 173px;
   height: 48px;
-  border: none;
   border-radius: 50px;
+  border: none;
   background: #A5C926;
+  color: #FFFFFF;
   font-size: 14px;
   line-height: 24px;
   font-family: "Open Sans", sans-serif;
-  color: #FFFFFF;
-  margin: 0 auto;
 }
 
 /* end main */
