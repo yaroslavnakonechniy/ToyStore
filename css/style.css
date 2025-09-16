@@ -70,10 +70,6 @@ a {
   font-style: normal;
   font-display: swap;
 }
-/*
-$Varela-Round
-$Open-Sans
-*/
 body {
   font-family: "Varela Round", sans-serif;
 }
@@ -144,13 +140,12 @@ body {
 }
 .header__menu-buttons {
   margin-right: 15px;
-  text-align: end;
   display: grid;
   grid-template: 1fr/35px 35px 35px;
-  justify-content: end;
-  text-align: center;
-  align-items: center;
   gap: 10px;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
 }
 .header__menu-cart {
   font-size: 13px;
