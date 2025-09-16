@@ -4,7 +4,7 @@
 }
 
 @mixin border-radius-bg-color($border-radius, $background, $color){
-    border-radius: border-radius;
+    border-radius: $border-radius;
     border: none;
     background: $background;
     color: $color;
