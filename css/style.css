@@ -75,14 +75,11 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 /* header */
-.header {
-  grid-area: "header";
-}
 .header__contact {
   background-color: #A5C926;
 }
@@ -106,6 +103,29 @@ body {
 }
 .header__contact-social-item {
   padding: 9px;
+}
+@media (max-width: 1200px) {
+  .header__contact {
+    background-color: #FFC12C;
+  }
+  .header .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .header .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 992px) {
+  .header .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .header .container {
+    max-width: none;
+  }
 }
 .header__menu {
   background: #FFFFFF;
@@ -189,9 +209,11 @@ body {
 .main__webflow {
   display: grid;
   place-items: center;
+  grid-template: 1fr/1fr 2fr 1fr;
 }
 .main__webflow-card {
-  width: 570px;
+  grid-column: 2;
+  width: 100%;
   height: 308px;
   border-radius: 20px;
   border: none;
@@ -231,9 +253,12 @@ body {
 .main__offer-cards {
   display: grid;
   grid-template: 1fr/1fr 1fr;
+  gap: 20px;
+  padding: 10px;
+  place-items: center;
 }
 .main__offer-sttufed-animals, .main__offer-wooden-toys {
-  width: 570px;
+  width: 100%;
   height: 188px;
   border-radius: 20px;
   border: none;
@@ -316,7 +341,7 @@ body {
 }
 .main__sttufed-title, .main__wooden-title {
   display: grid;
-  grid-template: 1fr/1fr 100px 20px;
+  grid-template: 1fr/3fr 0.3fr 0.2fr;
 }
 .main__sttufed-sabtitle, .main__wooden-sabtitle {
   font-size: 28px;
@@ -339,28 +364,27 @@ body {
   position: absolute;
   content: "";
   top: 10px;
-  right: 0;
+  left: 0;
   width: 15px;
   height: 15px;
   background: url("../assets/icon/arrow-sttufed.svg") center/contain no-repeat;
 }
 .main__sttufed-line, .main__wooden-line {
-  width: 100%;
-  height: 2px;
+  width: 10%;
+  height: 5px;
   background: #A5C926;
 }
 .main__sttufed-cards, .main__wooden-cards {
   display: grid;
   grid-template: 1fr/1fr 1fr 1fr 1fr;
   gap: 30px;
-  padding-top: 55px;
-  padding-bottom: 135px;
+  padding: 55px 10px 135px;
 }
 .main__sttufed-card, .main__wooden-card {
-  width: 270px;
+  width: 100%;
   height: 328px;
   display: grid;
-  grid-template: 240px 32px 24px/1fr;
+  grid-template: 2fr 1fr 1fr/1fr;
   box-shadow: 0 1px 0 #DDDDDD;
   border-radius: 20px;
   border: none;
@@ -382,6 +406,7 @@ body {
   border: none;
   background: #A5C926;
   color: #FFFFFF;
+  margin-bottom: 34px;
 }
 .main__banner-container {
   height: 464px;
@@ -393,7 +418,7 @@ body {
   place-items: center;
 }
 .main__banner-card {
-  width: 800px;
+  width: 100%;
   height: 232px;
   border: none;
   border-radius: 20px;
@@ -595,6 +620,7 @@ body {
 }
 
 /* end main */
+/* footer */
 .footer {
   background: #A5C926;
   color: #FFFFFF;
@@ -651,4 +677,4 @@ body {
   text-align: end;
 }
 
-/* footer *//*# sourceMappingURL=style.css.map */
+/* end footer *//*# sourceMappingURL=style.css.map */
