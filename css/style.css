@@ -196,7 +196,7 @@ body {
   border-radius: 20px;
   border: none;
   background: #FFFFFF;
-  color: 0;
+  color: #111111;
   text-align: center;
 }
 .main__webflow-sabtitle {
@@ -238,6 +238,8 @@ body {
   border-radius: 20px;
   border: none;
   background: 0;
+  color: #FFFFFF;
+  border-radius: 20px;
   color: #FFFFFF;
   margin: 0 15px;
 }
@@ -560,7 +562,6 @@ body {
   display: grid;
   grid-template: auto auto auto auto/1fr;
   padding: 119px 0;
-  text-align: center;
   place-items: center;
 }
 .main__elastic-copy {
